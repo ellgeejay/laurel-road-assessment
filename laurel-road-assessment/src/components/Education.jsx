@@ -8,6 +8,7 @@ function Education() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(updateField({ field: name, value }));
+    console.log(value);
   };
 
   const handleClick = () => {};
@@ -18,6 +19,7 @@ function Education() {
         <label>
           School Name:
           <input
+            required
             type='text'
             name='schoolName'
             value={formState.schoolName}
@@ -28,6 +30,7 @@ function Education() {
         <label>
           Graduation Year
           <input
+            required
             type='text'
             name='gradYear'
             value={formState.gradYear}

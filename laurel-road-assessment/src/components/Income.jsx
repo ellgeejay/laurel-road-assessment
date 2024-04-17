@@ -18,6 +18,7 @@ function Income() {
         <label>
           Annual Income:
           <input
+            required
             type='text'
             name='annualIncome'
             value={formState.annualIncome}
@@ -28,6 +29,7 @@ function Income() {
         <label>
           Job Title:
           <input
+            required
             type='text'
             name='jobTitle'
             value={formState.jobTitle}
