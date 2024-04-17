@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { updateField } from '../features/formSlice';
+import { updateField } from '../features/form/formSlice';
 import { Link } from 'react-router-dom';
 
 function Income() {
@@ -13,6 +13,7 @@ function Income() {
 
   return (
     <div>
+      <h2>Income</h2>
       <form>
         <label>
           Annual Income:

@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { updateField } from '../features/formSlice';
+import { updateField } from '../features/form/formSlice';
 import { Link } from 'react-router-dom';
 
 function Personal() {
@@ -15,6 +15,7 @@ function Personal() {
 
   return (
     <div>
+      <h2>Personal</h2>
       <form>
         <label>
           First Name:

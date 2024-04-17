@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { updateField } from '../features/formSlice';
+import { updateField } from '../features/form/formSlice';
 import { Link } from 'react-router-dom';
 
 function Education() {
@@ -14,6 +14,7 @@ function Education() {
 
   return (
     <div>
+      <h2>Education</h2>
       <form>
         <label>
           School Name:
