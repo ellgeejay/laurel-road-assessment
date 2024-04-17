@@ -1,8 +1,13 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { updateField } from '../features/formSlice';
+import { useSelector } from 'react-redux';
 
 function Confirmation() {
   const formState = useSelector((state) => state.form);
 
-  return console.log(formState);
+  return (
+    <div>
+      <pre>{JSON.stringify(formState, null, 2)}</pre>
+    </div>
+  );
 }
+
+export default Confirmation;
