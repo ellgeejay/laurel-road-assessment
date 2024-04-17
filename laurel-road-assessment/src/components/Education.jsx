@@ -25,7 +25,7 @@ function Education() {
             onChange={handleChange}
           />
         </label>
-
+        <br />
         <label>
           Graduation Year
           <input
@@ -36,6 +36,7 @@ function Education() {
             onChange={handleChange}
           />
         </label>
+        <br />
         <button type='submit'>
           <Link to='/income'>Next</Link>
         </button>

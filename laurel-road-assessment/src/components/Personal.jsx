@@ -26,6 +26,7 @@ function Personal() {
             onChange={handleChange}
           />
         </label>
+        <br />
 
         <label>
           Last Name:
@@ -37,6 +38,7 @@ function Personal() {
             onChange={handleChange}
           />
         </label>
+        <br />
         <label>
           Age:
           <input
@@ -47,8 +49,9 @@ function Personal() {
             onChange={handleChange}
           />
         </label>
+        <br />
+        {/* ran into an issue where because this is a button element and not a form element, the "required" attribute on the input fields is not sticking. I tried adding a handleSubmit function that I passed to the form, but it would not retain the data entered as new state and would not display on the final confirmation page. It does work on occasion, but is not consistent */}
         <button type='submit'>
-          {/* creating a link to our next page/component */}
           <Link to='/education'>Next</Link>
         </button>
       </form>

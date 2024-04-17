@@ -24,7 +24,7 @@ function Income() {
             onChange={handleChange}
           />
         </label>
-
+        <br />
         <label>
           Job Title:
           <input
@@ -35,6 +35,7 @@ function Income() {
             onChange={handleChange}
           />
         </label>
+        <br />
         <button type='submit'>
           <Link to='/confirmation'>Next</Link>
         </button>
