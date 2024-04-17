@@ -1,7 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { updateField } from '../features/formSlice';
+import { Link } from 'react-router-dom';
 
 function Personal() {
+  // creating variable to grab state
   const formState = useSelector((state) => state.form);
   const dispatch = useDispatch();
 
@@ -10,9 +12,6 @@ function Personal() {
     const { name, value } = e.target;
     dispatch(updateField({ field: name, value }));
   };
-
-  // need to make it so that the user both goes to the next page and has their formState from this page stored to be displayed on confirmation page later
-  const handleClick = () => {};
 
   return (
     <div>
@@ -48,11 +47,9 @@ function Personal() {
             onChange={handleChange}
           />
         </label>
-        <button
-          type='submit'
-          onClick={handleClick}
-        >
-          Next
+        <button type='submit'>
+          {/* creating a link to our next page/component */}
+          <Link to='/education'>Next</Link>
         </button>
       </form>
     </div>

@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { updateField } from '../features/formSlice';
+import { Link } from 'react-router-dom';
 
 function Education() {
   const formState = useSelector((state) => state.form);
@@ -10,8 +11,6 @@ function Education() {
     dispatch(updateField({ field: name, value }));
     console.log(value);
   };
-
-  const handleClick = () => {};
 
   return (
     <div>
@@ -37,11 +36,8 @@ function Education() {
             onChange={handleChange}
           />
         </label>
-        <button
-          type='submit'
-          onClick={handleClick}
-        >
-          Next
+        <button type='submit'>
+          <Link to='/income'>Next</Link>
         </button>
       </form>
     </div>
