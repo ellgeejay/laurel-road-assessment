@@ -1,8 +1,16 @@
 import './App.css';
-import MyForm from './components/MyForm';
+import Personal from './components/Personal';
+import Income from './components/Income';
+import Education from './components/Education';
 
 function App() {
-  return <MyForm />;
+  return (
+    <>
+      <Personal />
+      <Education />
+      <Income />
+    </>
+  );
 }
 
 export default App;

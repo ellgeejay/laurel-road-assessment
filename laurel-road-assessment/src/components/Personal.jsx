@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { updateField } from '../features/formSlice';
 
-function MyForm() {
+function Personal() {
   const formState = useSelector((state) => state.form);
   const dispatch = useDispatch();
 
@@ -9,6 +9,8 @@ function MyForm() {
     const { name, value } = e.target;
     dispatch(updateField({ field: name, value }));
   };
+
+  const handleClick = () => {};
 
   return (
     <div>
@@ -41,10 +43,15 @@ function MyForm() {
             onChange={handleChange}
           />
         </label>
-        <button type='submit'>Next</button>
+        <button
+          type='submit'
+          onClick={handleClick}
+        >
+          Next
+        </button>
       </form>
     </div>
   );
 }
 
-export default MyForm;
+export default Personal;
