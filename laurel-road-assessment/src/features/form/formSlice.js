@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// setting initial state for application
 const initialState = {
   firstName: '',
   lastName: '',
@@ -10,6 +11,7 @@ const initialState = {
   jobTitle: '',
 };
 
+// creating a slice to then apply our actions to, then export as a reducer
 export const formSlice = createSlice({
   name: 'form',
   initialState,

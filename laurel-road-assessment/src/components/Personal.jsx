@@ -7,7 +7,7 @@ function Personal() {
   const formState = useSelector((state) => state.form);
   const dispatch = useDispatch();
 
-  // updating formState
+  // updating formState (state to be modified and displayed on our confirmation page)
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(updateField({ field: name, value }));

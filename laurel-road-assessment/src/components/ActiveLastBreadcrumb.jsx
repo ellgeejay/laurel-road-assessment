@@ -10,7 +10,7 @@ function handleClick(event) {
 function ActiveLastBreadcrumb() {
   const location = useLocation();
 
-  // using current location in application to highlight current component by name
+  // using current location in application to highlight current component by name - if on current component, will make the breadcrumb name bold
   return (
     <div
       role='presentation'
